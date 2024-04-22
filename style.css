@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ModerateViolet: hsl(263, 55%, 52%);
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --LightGray: hsl(0, 0%, 81%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+
+}
+
+body {
+  font-size: 13px;
+  background-color: var(--LightGrayishBlue);
+  padding: 71px 24px;
+  font-family: Barlow Semi Condensed;
+
+  width: 100%;
+ 
+}
+
+/*Main grid and overall styles for all containers*/
+
+.main-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+}
+
+#Daniel {
+  margin-bottom: 24px;
+}
+
+#jonathan-desktop {
+  margin-bottom: 24px;
+
+}
+
+.Jeanette {
+  margin-top: 24px;
+
+}
+
+#Patrick {
+  margin-top: 24px;
+  background-color: var(--VeryDarkBlackishBlue);
+
+}
+
+#daniel-jonathan {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 24px;
+
+
+}
+
+.main-container {
+  background-color: var(--ModerateViolet);
+  padding: 26px 32px 32px 32px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.quotations {
+  width: 104px;
+  height: 102px;
+  position: absolute;
+  top: -26px;
+  right: -6px;
+  z-index: 2;
+}
+
+.user-info-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  border: 2px solid #A775F1;
+  display: inline-block;
+}
+
+.name {
+  color: white;
+  font-weight: 700px;
+}
+
+.profession {
+  font-size: 11px;
+  font-weight: 700px;
+  color: rgba(250, 250, 250, .5);
+}
+
+.testimonial-container {
+  min-width: 263px;
+  max-width: 420px;
+  position: relative;
+  z-index: 3;
+}
+
+.testimonial {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin-bottom: 40px;
+}
+
+.bio {
+  color: rgba(250, 250, 250, .5);
+  font-weight: 400;
+  line-height: 20px;
+
+  min-width: 263px;
+  max-width: 420px;
+
+  padding-right: 20px;
+}
+
+/*Styles for the smaller containers*/
+
+.small-container {
+  background-color: var(--VeryDarkGrayishBlue);
+  padding: 26px 32px 32px 32px;
+  border-radius: 8px;
+}
+
+.testimonial-small {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin-bottom: 16px;
+}
+
+.profile-pic-small {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    display: inline-block;
+  }
+
+.bio-small {
+    color: rgba(250, 250, 250, .7);
+    font-weight: 400;
+    line-height: 19px;
+  
+    min-width: 263px;
+    max-width: 420px;
+  
+    padding-right:  5px;
+  }
+
+  .main-container,
+  .small-container {
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, .25)
+    ;
+  }
+
+/*Color styles for white containers*/
+
+#white-container {
+  background-color: var(--White);
+}
+
+#white-name {
+  color: #48556A;
+}
+
+#testimonial-white {
+  color: var(--VeryDarkGrayishBlue)
+}
+
+#white-profession {
+  color: rgba(72, 85, 106, .5);
+}
+
+#bio-white {
+  color: rgba(72, 85, 106, .7);
+}
+
+
+/*Color styles for black container*/
+
+
+
+@media (min-width: 1000px) {
+
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+  
+  }
+  
+
+.quotations {
+  width: 104px;
+  height: 102px;
+  position: absolute;
+  top: -26px;
+  right: 53px;
+  z-index: 2;
+}
+
+
+.main-stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.daniel-jonathan {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: stretch;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.Jeanette-Patrick {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.thin-testimonial
+ {
+  width: 191px;
+}
+
+.bio-small {
+  min-width: 191px;
+}
+
+.testimonial-container {
+  min-width: 191px;
+}
+
+.testimonial-container {
+  min-width: 191px;
+  max-width: 600px;
+}
+
+.testimonial {
+  margin-bottom: 16px;
+  width: 476px;
+}
+
+.testimonial-large {
+  width: 476px;
+}
+
+.bio-large {
+  min-width: 263px;
+  max-width: 600px;
+  width: 476px;  
+}
+
+.bio {
+  min-width: 263px;
+  max-width: 600px;
+  width: 476px;  
+
+}
+
+#Daniel {
+  margin-bottom: 0px;
+}
+
+#jonathan-desktop {
+  margin-bottom: 0px;
+
+}
+
+#Patrick {
+  margin-top: 0px;
+
+}
+
+.Jeanette {
+  margin-top: 0px;
+
+}
+
+}
